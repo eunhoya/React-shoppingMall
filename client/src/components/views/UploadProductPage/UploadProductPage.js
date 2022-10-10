@@ -42,6 +42,7 @@ const UploadProductPage = (props) => {
   const submitHandler = (e) => {
     e.preventDefault();
 
+    //스테이트가 비어있으면 안됨
     if (!Title || !Description || !Price || !Continent || !Images) {
       return alert('모든 값을 넣어주세요');
     }
